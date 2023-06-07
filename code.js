@@ -1,3 +1,4 @@
+let bnt7 = document.getElementsByClassName("button-wep")[0];
 window.onscroll = function () {
   let btn = document.getElementsByClassName("child")[0];
   if (window.scrollY >= 340) {
@@ -32,7 +33,6 @@ window.onscroll = function () {
   if (window.scrollY >= 3000) {
     bnt6.style.cssText = "animation: amcvg-6 2s 1;  opacity: 1;";
   }
-  let bnt7 = document.getElementsByClassName("button-wep")[0];
   if (window.scrollY >= 600) {
     bnt7.style.cssText = "display: block;";
   } else if (window.scrollY <= 200) {
@@ -45,8 +45,12 @@ let links = document.querySelectorAll(".links li a");
 
 hamburger.onclick = function () {
   ul.classList.toggle("open");
+  if (ul.classList.contains("open")) {
+    document.body.style.overflow = "hidden";
+  } else {
+    document.body.style.overflow = "auto";
+  }
 };
-
 links.forEach(function (link) {
   link.onclick = function () {
     ul.classList.toggle("open");
