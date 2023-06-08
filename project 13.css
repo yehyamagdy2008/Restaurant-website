@@ -12,7 +12,6 @@ html {
 
 body {
   font-family: "Quicksand", sans-serif;
-  overflow-x: hidden;
 }
 
 .button-wep {
@@ -53,7 +52,6 @@ li {
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
-  overflow: hidden;
 }
 .dad #navbar .div {
   display: flex;
@@ -237,7 +235,7 @@ li {
   height: 200%;
   transform: rotate(45deg);
   transition: all 0.5s ease;
-  opacity: 0;
+  /* opacity: 0; */
 }
 .btn:hover {
   background-color: #ff8000;
@@ -267,7 +265,6 @@ li {
   background-color: #f4f4f4;
   scroll-margin-top: 100px;
   padding: 30px 0;
-  overflow: hidden;
 }
 #About .title {
   text-align: center;
@@ -301,9 +298,9 @@ li {
 .btn-about-content {
   margin-top: 30px;
 }
-.child {
+/* .child {
   opacity: 0;
-}
+} */
 .menu-Item-left .menu-item .p-menu-item,
 .menu-Item-right .menu-item .p-menu-item {
   position: absolute;
@@ -318,7 +315,7 @@ li {
 .menu-Item-right .menu-item {
   position: relative;
 }
-@keyframes amcvg {
+/* @keyframes amcvg {
   0% {
     position: relative;
     right: 700px;
@@ -327,11 +324,11 @@ li {
     position: relative;
     right: 0px;
   }
-}
-.img-amcvg-2 {
+} */
+/* .img-amcvg-2 {
   opacity: 0;
-}
-@keyframes amcvg-2 {
+} */
+/* @keyframes amcvg-2 {
   0% {
     position: relative;
     left: 700px;
@@ -340,7 +337,7 @@ li {
     position: relative;
     left: 0px;
   }
-}
+} */
 .btn-about-content {
   color: #fff;
   background-color: #383848;
@@ -353,7 +350,6 @@ li {
   background: url("./img/offer-background.jpg") center center fixed;
   background-size: cover;
   padding: 50px 0;
-  overflow: hidden;
 }
 .cards {
   display: flex;
@@ -413,7 +409,6 @@ li {
 #Menu {
   background-color: #f4f4f4;
   padding: 5rem 0;
-  overflow: hidden;
 }
 #Menu .title {
   text-align: center;
@@ -475,13 +470,13 @@ li {
 #Menu .btn-2:hover {
   background: #383848;
 }
-.menu-Item-right {
+/* .menu-Item-right {
   opacity: 0;
 }
 .menu-Item-left {
   opacity: 0;
-}
-@keyframes amcvg-3 {
+} */
+/* @keyframes amcvg-3 {
   0% {
     position: relative;
     left: 750px;
@@ -490,8 +485,8 @@ li {
     position: relative;
     left: 0px;
   }
-}
-@keyframes amcvg-4 {
+} */
+/* @keyframes amcvg-4 {
   0% {
     position: relative;
     right: 700px;
@@ -500,12 +495,11 @@ li {
     position: relative;
     right: 0px;
   }
-}
+} */
 #daytime {
   background: url("./img/daytime_bg.jpeg") center center/cover fixed no-repeat;
   color: #fff;
   text-align: center;
-  overflow: hidden;
 }
 .daytime-items {
   display: flex;
@@ -526,7 +520,6 @@ li {
   background: url("./img/offer-background.jpg") center center/cover fixed
     no-repeat;
   scroll-margin-top: 50px;
-  overflow: hidden;
 }
 .gallery .title {
   padding: 30px 0;
@@ -589,7 +582,6 @@ li {
   background: #f4f2ed;
   padding: 5rem 0;
   scroll-margin-top: 100px;
-  overflow: hidden;
 }
 
 #contact .container {
@@ -653,7 +645,6 @@ textarea {
   background-color: #e3e2dd;
 }
 footer {
-  overflow: hidden;
   background-color: black;
   padding-top: 30px;
   display: flex;
@@ -694,10 +685,10 @@ form button {
   padding: 15px 0;
   font-size: 14px;
 }
-.contact-info {
+/* .contact-info {
   opacity: 0;
-}
-@keyframes amcvg-5 {
+} */
+/* @keyframes amcvg-5 {
   0% {
     position: relative;
     right: 500px;
@@ -706,11 +697,11 @@ form button {
     position: relative;
     right: 0px;
   }
-}
-form {
+} */
+/* form {
   opacity: 0;
-}
-@keyframes amcvg-6 {
+} */
+/* @keyframes amcvg-6 {
   0% {
     position: relative;
     left: 700px;
@@ -719,11 +710,8 @@ form {
     position: relative;
     left: 0px;
   }
-}
+} */
 @media (max-width: 650px) {
-  .dad {
-    height: 150vh;
-  }
   #About {
     text-align: center;
   }
@@ -864,5 +852,10 @@ form {
   }
   #contact .contact-content {
     flex-direction: column;
+  }
+}
+@media (min-width: 580px) and (max-width: 700px) {
+  .dad {
+    height: 150vh;
   }
 }
