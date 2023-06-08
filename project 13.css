@@ -53,6 +53,7 @@ li {
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
+  overflow: hidden;
 }
 .dad #navbar .div {
   display: flex;
@@ -266,6 +267,7 @@ li {
   background-color: #f4f4f4;
   scroll-margin-top: 100px;
   padding: 30px 0;
+  overflow: hidden;
 }
 #About .title {
   text-align: center;
@@ -351,6 +353,7 @@ li {
   background: url("./img/offer-background.jpg") center center fixed;
   background-size: cover;
   padding: 50px 0;
+  overflow: hidden;
 }
 .cards {
   display: flex;
@@ -410,6 +413,7 @@ li {
 #Menu {
   background-color: #f4f4f4;
   padding: 5rem 0;
+  overflow: hidden;
 }
 #Menu .title {
   text-align: center;
@@ -501,6 +505,7 @@ li {
   background: url("./img/daytime_bg.jpeg") center center/cover fixed no-repeat;
   color: #fff;
   text-align: center;
+  overflow: hidden;
 }
 .daytime-items {
   display: flex;
@@ -521,6 +526,7 @@ li {
   background: url("./img/offer-background.jpg") center center/cover fixed
     no-repeat;
   scroll-margin-top: 50px;
+  overflow: hidden;
 }
 .gallery .title {
   padding: 30px 0;
@@ -583,6 +589,7 @@ li {
   background: #f4f2ed;
   padding: 5rem 0;
   scroll-margin-top: 100px;
+  overflow: hidden;
 }
 
 #contact .container {
@@ -646,6 +653,7 @@ textarea {
   background-color: #e3e2dd;
 }
 footer {
+  overflow: hidden;
   background-color: black;
   padding-top: 30px;
   display: flex;
@@ -713,6 +721,9 @@ form {
   }
 }
 @media (max-width: 650px) {
+  .dad {
+    height: 150vh;
+  }
   #About {
     text-align: center;
   }
@@ -825,6 +836,9 @@ form {
   }
 }
 @media (min-width: 651px) and (max-width: 960px) {
+  .dad {
+    height: 150vh;
+  }
   #About .about-content img {
     display: none;
   }
