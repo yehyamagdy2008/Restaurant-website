@@ -235,7 +235,7 @@ li {
   height: 200%;
   transform: rotate(45deg);
   transition: all 0.5s ease;
-  /* opacity: 0; */
+  opacity: 0;
 }
 .btn:hover {
   background-color: #ff8000;
@@ -298,9 +298,6 @@ li {
 .btn-about-content {
   margin-top: 30px;
 }
-/* .child {
-  opacity: 0;
-} */
 .menu-Item-left .menu-item .p-menu-item,
 .menu-Item-right .menu-item .p-menu-item {
   position: absolute;
@@ -315,29 +312,6 @@ li {
 .menu-Item-right .menu-item {
   position: relative;
 }
-/* @keyframes amcvg {
-  0% {
-    position: relative;
-    right: 700px;
-  }
-  100% {
-    position: relative;
-    right: 0px;
-  }
-} */
-/* .img-amcvg-2 {
-  opacity: 0;
-} */
-/* @keyframes amcvg-2 {
-  0% {
-    position: relative;
-    left: 700px;
-  }
-  100% {
-    position: relative;
-    left: 0px;
-  }
-} */
 .btn-about-content {
   color: #fff;
   background-color: #383848;
@@ -470,32 +444,6 @@ li {
 #Menu .btn-2:hover {
   background: #383848;
 }
-/* .menu-Item-right {
-  opacity: 0;
-}
-.menu-Item-left {
-  opacity: 0;
-} */
-/* @keyframes amcvg-3 {
-  0% {
-    position: relative;
-    left: 750px;
-  }
-  100% {
-    position: relative;
-    left: 0px;
-  }
-} */
-/* @keyframes amcvg-4 {
-  0% {
-    position: relative;
-    right: 700px;
-  }
-  100% {
-    position: relative;
-    right: 0px;
-  }
-} */
 #daytime {
   background: url("./img/daytime_bg.jpeg") center center/cover fixed no-repeat;
   color: #fff;
@@ -685,32 +633,6 @@ form button {
   padding: 15px 0;
   font-size: 14px;
 }
-/* .contact-info {
-  opacity: 0;
-} */
-/* @keyframes amcvg-5 {
-  0% {
-    position: relative;
-    right: 500px;
-  }
-  100% {
-    position: relative;
-    right: 0px;
-  }
-} */
-/* form {
-  opacity: 0;
-} */
-/* @keyframes amcvg-6 {
-  0% {
-    position: relative;
-    left: 700px;
-  }
-  100% {
-    position: relative;
-    left: 0px;
-  }
-} */
 @media (max-width: 650px) {
   #About {
     text-align: center;
@@ -782,10 +704,10 @@ form button {
     margin-left: 30px;
   }
   .swiper-button-prev {
-    background-color: transparent !important;
+    display: none !important;
   }
   .swiper-button-next {
-    background-color: transparent !important;
+    display: none !important;
   }
   .menu-Item-left .menu-item .p-menu-item,
   .menu-Item-right .menu-item .p-menu-item {
