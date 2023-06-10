@@ -30,3 +30,70 @@ links.forEach(function (link) {
     document.body.style.overflow = "auto";
   };
 });
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+const options = {
+  root: null,
+};
+
+let ChildSlide = document.querySelector(".child");
+
+const observer = new IntersectionObserver(function (entires) {
+  entires.forEach((el) => {
+    if (el.isIntersecting) el.target.classList.add("slide");
+  });
+}, options);
+observer.observe(ChildSlide);
+
+//////////////////////////////////////////////////////////////////////////
+
+let imgSlide = document.querySelector("#About .about-content img");
+
+const observer2 = new IntersectionObserver(function (entires) {
+  entires.forEach((el) => {
+    if (el.isIntersecting) el.target.classList.add("slide2");
+  });
+}, options);
+observer2.observe(imgSlide);
+//////////////////////////////////////////////////////////////////////////
+
+let muneleft = document.querySelector(".menu-Item-left");
+
+const observer3 = new IntersectionObserver(function (entires) {
+  entires.forEach((el) => {
+    if (el.isIntersecting) el.target.classList.add("slide");
+  });
+}, options);
+observer3.observe(muneleft);
+
+//////////////////////////////////////////////////////////////////////////
+
+let muneright = document.querySelector(".menu-Item-right");
+
+const observer4 = new IntersectionObserver(function (entires) {
+  entires.forEach((el) => {
+    if (el.isIntersecting) el.target.classList.add("slide2");
+  });
+}, options);
+observer4.observe(muneright);
+
+//////////////////////////////////////////////////////////////////////////
+
+let contact = document.querySelector(".contact-info");
+
+const observer5 = new IntersectionObserver(function (entires) {
+  entires.forEach((el) => {
+    if (el.isIntersecting) el.target.classList.add("slide");
+  });
+}, options);
+observer5.observe(contact);
+
+//////////////////////////////////////////////////////////////////////////
+
+let contact2 = document.querySelector("form");
+
+const observer6 = new IntersectionObserver(function (entires) {
+  entires.forEach((el) => {
+    if (el.isIntersecting) el.target.classList.add("slide2");
+  });
+}, options);
+observer6.observe(contact2);

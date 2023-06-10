@@ -12,6 +12,7 @@ html {
 
 body {
   font-family: "Quicksand", sans-serif;
+  overflow-x: hidden;
 }
 
 .button-wep {
@@ -727,7 +728,7 @@ form button {
     align-items: center;
     flex-direction: column;
     width: 100%;
-    height: 600px;
+    height: 680px;
     inset: 0;
     background-color: black;
     animation: moves 0.5s forwards;
@@ -783,3 +784,33 @@ form button {
     height: 150vh;
   }
 }
+
+/* start animation slide */
+.slide {
+  animation: slide 1s ease-in-out both;
+}
+@keyframes slide {
+  0% {
+    transform: translateX(-650px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.slide2 {
+  animation: slide2 1s 1;
+}
+@keyframes slide2 {
+  0% {
+    transform: translateX(570px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+/* End animation slide */
