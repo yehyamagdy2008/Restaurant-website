@@ -97,3 +97,11 @@ const observer6 = new IntersectionObserver(function (entires) {
   });
 }, options);
 observer6.observe(contact2);
+
+let lif = document.querySelector(".fa-sun");
+let but = document.querySelector(".sun");
+let htm = document.querySelector(".hml");
+but.onclick = function () {
+  lif.classList.toggle("fa-moon");
+  htm.classList.toggle("show");
+};
