@@ -13,7 +13,6 @@
   --rgb1: rgba(0, 0, 0, 0.5);
   --rgb2: rgba(0, 0, 0, 0.5);
 }
-/* 383848 */
 :root.show {
   --background: #111;
   --pargraf: white;
@@ -35,13 +34,18 @@ p {
 .fa-sun {
   font-size: 35px;
   color: white;
-  margin-right: 90px;
+  margin-right: 20px;
+  background-color: #111;
+  padding: 8px;
+  border-radius: 50%;
 }
 .sun {
   cursor: pointer;
+  margin-top: 30px;
 }
 .fa-moon {
   color: black;
+  background-color: white;
 }
 .button-wep {
   z-index: 200;
@@ -70,6 +74,9 @@ li {
 .web {
   margin: 0 auto;
 }
+.containernbm {
+  display: flex;
+}
 .dad {
   height: 100vh;
   background-image: linear-gradient(to bottom, var(--rgb1), var(--rgb2)),
@@ -97,6 +104,7 @@ li {
   display: flex;
   gap: 30px;
   margin-right: 60px;
+  margin-top: 40px;
 }
 .dad #navbar .links li a {
   color: white;
@@ -159,8 +167,20 @@ li {
 #navbar .hamburger.active .bar::after {
   top: 0;
 }
-.dad #navbar .links li a:hover {
-  border-bottom: 2px solid yellow;
+.dad #navbar .links li a::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 2px;
+  margin: 10px auto;
+  background-color: yellow;
+  transition: 0.4s;
+}
+.dad #navbar .links li a:hover::after {
+  width: 100%;
+}
+.dad #navbar .links li a::after:hover {
+  width: 100%;
 }
 @keyframes hamburger_puls {
   0% {
@@ -757,6 +777,7 @@ form button {
     inset: 0;
     background-color: black;
     animation: moves 0.5s forwards;
+    margin-top: 0;
   }
   .dad #navbar .links.open li a {
     font-size: 40px;
@@ -765,7 +786,11 @@ form button {
     display: none;
   }
   .sun {
-    display: none;
+    margin-top: 0;
+    margin-left: auto;
+  }
+  .containernbm {
+    width: 50%;
   }
 }
 @keyframes moves {
