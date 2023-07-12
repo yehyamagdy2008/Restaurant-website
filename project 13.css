@@ -33,20 +33,28 @@ p {
 }
 .fa-sun {
   font-size: 35px;
-  color: white;
+  color: black;
   margin-right: 20px;
-  background-color: #111;
-  padding: 8px;
-  border-radius: 50%;
-}
-.sun {
-  cursor: pointer;
-  margin-top: 30px;
+  margin-right: 0;
 }
 .fa-moon {
-  color: black;
-  background-color: white;
+  font-size: 35px;
+  color: white;
+  margin-right: 20px;
+  margin-right: 0;
 }
+.sun {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 30px;
+  margin-right: 20px;
+}
+
 .button-wep {
   z-index: 200;
   position: fixed;

@@ -97,11 +97,25 @@ const observer6 = new IntersectionObserver(function (entires) {
   });
 }, options);
 observer6.observe(contact2);
-
-let lif = document.querySelector(".fa-sun");
-let but = document.querySelector(".sun");
+let but2 = document.querySelector(".sun");
+let but = document.querySelector(".sun i");
 let htm = document.querySelector(".hml");
 but.onclick = function () {
-  lif.classList.toggle("fa-moon");
   htm.classList.toggle("show");
+  if (htm.classList.contains("show")) {
+    but.classList.add("fa-sun");
+    but.classList.remove("fa-moon");
+    but2.style.backgroundColor = "white";
+  } else {
+    but.classList.remove("fa-sun");
+    but.classList.add("fa-moon");
+    but2.style.backgroundColor = "black";
+  }
 };
+window.addEventListener("load", function () {
+  if (htm.classList.contains("show")) {
+    but2.style.backgroundColor = "white";
+  } else {
+    but2.style.backgroundColor = "black";
+  }
+});
